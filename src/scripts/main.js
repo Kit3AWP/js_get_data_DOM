@@ -13,7 +13,7 @@ const populationNumbers = populationArray.map((span) => {
 const total = populationNumbers.reduce((acc, num) => {
   return acc + num;
 }, 0);
-const average = total / populationNumbers.length;
+const average = Math.round(total / populationNumbers.length);
 const totalFormatted = total.toLocaleString();
 const averageFormatted = average.toLocaleString();
 const totalSpan = document.querySelector('.total-population');
